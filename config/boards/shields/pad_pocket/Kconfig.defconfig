@@ -1,0 +1,6 @@
+if SHIELD_PADPOCKETTRIO
+
+config ZMK_KEYBOARD_NAME
+    default "Pad Pocket Trio"
+
+endif
