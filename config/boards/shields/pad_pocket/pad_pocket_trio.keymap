@@ -18,12 +18,6 @@
             bindings = <&macro_press &to 0>, <&macro_press &rgb_ug RGB_EFR>, <&macro_press &rgb_ug RGB_COLOR_HSB(205, 0, 25)>; 
         };
 
-        double_click: double_click {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &mkp MB1>, <&macro_wait_time 200>, <&macro_release &mkp MB1>, <&macro_press &mkp MB1>, <&macro_release &mkp MB1>; 
-        };
-
         bluetooth_profile_clear: bluetooth_profile_clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -90,7 +84,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp C_VOLUME_DOWN>, <&kp C_PREVIOUS>, <&none>;
-            display-name = "Media Controls Left";
+            display-name = "Media Volume Down + Prev;
         };
 
         td1: media_controls_right {
@@ -98,7 +92,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_NEXT>, <&none>;
-            display-name = "Media Controls Right";
+            display-name = "Media Volume Up + Skip";
         };
 
         td2: page_turner_controls_left {
@@ -106,7 +100,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_ARROW>, <&kp DOWN_ARROW>, <&none>;
-            display-name = "Page Turner Controls Left";
+            display-name = "Page Turner Next";
         };
 
         td3: page_turner_controls_right {
@@ -114,7 +108,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp RIGHT_ARROW>, <&kp UP_ARROW>, <&none>;
-            display-name = "Page Turner Controls Right";
+            display-name = "Page Turner Previous";
         };
 
         td4: scroll_controls_up {
@@ -176,11 +170,11 @@
         default_layer { // Layer 0
             display-name = "Default Layer";
             // -------------------------------------
-            //       |     Page Turner Left    |     Page Turner Right     |
+            //       |     Page Turner Next    |     Page Turner Prev     | Esc
             bindings = <
-                &td2
                 &td3
-                &none
+                &td2
+                &kp ESC
             >;
         };
 
