@@ -42,7 +42,7 @@
     
     layout: layout {
         compatible = "zmk,physical-layout";
-        display-name = "TogKey Pad Pocket Trio";
+        display-name = "Pad Pocket Trio";
         kscan = <&kscan>;
         transform = <&transform>;
 
