@@ -71,14 +71,14 @@
         compatible = "zmk,combos";
         combo_studio_unlock {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
             layers = <1>;
             bindings = <&my_mt1 0 0>;
         };
 
         combo_pairing_mode {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
             layers = <0>;
             bindings = <&my_mt 0 0>;
         };
@@ -97,7 +97,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_NEXT>, <&kp C_PLAY_PAUSE>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_NEXT>, <&none>;
             display-name = "Media Controls Right";
         };
 
@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp RIGHT_ARROW>, <&kp UP_ARROW>, <&kp ESC>;
+            bindings = <&kp RIGHT_ARROW>, <&kp UP_ARROW>, <&none>;
             display-name = "Page Turner Controls Right";
         };
 
