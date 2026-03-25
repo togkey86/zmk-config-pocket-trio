@@ -84,7 +84,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp C_VOLUME_DOWN>, <&kp C_PREVIOUS>, <&none>;
-            display-name = "Media Volume Down + Prev;
+            display-name = "Media Volume Down Prev;
         };
 
         td1: media_controls_right {
@@ -92,7 +92,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_NEXT>, <&none>;
-            display-name = "Media Volume Up + Skip";
+            display-name = "Media Volume Up Skip";
         };
 
         td2: page_turner_controls_left {
